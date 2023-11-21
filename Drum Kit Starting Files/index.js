@@ -6,12 +6,14 @@ for(var i=0;i<no_ofDrumButtons;i++)
  document.querySelectorAll(".drum")[i].addEventListener("click",function(){
     var buttonInnerHTML=this.innerHTML;
     makeSound(buttonInnerHTML);
+    Animation(buttonInnerHTML);
  });
 }
 //detecting keyboard press
 
 document.addEventListener("keypress", function(event){
 makeSound(event.key);
+Animation(event.key);
 });
 
 function makeSound(key){
@@ -51,3 +53,11 @@ function makeSound(key){
                 break;
         }
         }
+function Animation(currentkey){
+    var activeButton=document.querySelector("."+currentkey);
+    activeButton.classList.add("pressed");
+
+    setTimeout(function(){
+        activeButton.classList.remove("pressed");
+    },100);
+}
