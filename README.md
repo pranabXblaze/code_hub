@@ -1,2 +1,6 @@
-# code_hub
-Hi, I'm Pranab gettin' to know the web 3.0. 
+Its normal childhood nostalgic. 
+The one and only Tic Tac Toe game.
+
+You are familiar with it obviously.
+
+Atleast  two players are allowed to play.
